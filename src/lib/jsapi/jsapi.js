@@ -1,5 +1,5 @@
 import $ from 'jquery';
-$.getJSON('https://team.weui.io/api/sign?url=' + encodeURIComponent(location.href.split('#')[0])).success((res) => {
+$.getJSON('https://weui.io/api/sign?url=' + encodeURIComponent(location.href.split('#')[0])).success((res) => {
     wx.config({
         beta: true,
         debug: false,
