@@ -9,7 +9,7 @@ module.exports = {
     context: path.join(__dirname, 'src'),
     entry: {
         vendor: ['fastclick', 'jquery', 'router', 'art-template/dist/template-debug'],
-        js: './app.js'
+        app: './app.js'
     },
     output: {
         path: path.join(__dirname, 'dist'),
