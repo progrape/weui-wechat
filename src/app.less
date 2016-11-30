@@ -1,0 +1,22 @@
+:global {
+    html, body, .container, .home {
+        height: 100%;
+    }
+    body {
+        background-color: #FBF9FE;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .weui-cells_checkbox {
+        & > .weui-cell {
+            & > * {
+                pointer-events: none;
+            }
+        }
+    }
+}

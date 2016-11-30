@@ -1,0 +1,226 @@
+<div class="weui-tab" id="tab">
+    <div class="weui-tab__panel">
+        <div class="weui-tab__content">
+            <div class="weui-search-bar" id="searchBar">
+                <form class="weui-search-bar__form">
+                    <div class="weui-search-bar__box">
+                        <i class="weui-icon-search"></i>
+                        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+                        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                    </div>
+                    <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                        <i class="weui-icon-search"></i>
+                        <span>搜索</span>
+                    </label>
+                </form>
+                <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+            </div>
+            <div class="weui-cells">
+                {{each chats as item i}}
+                <a class="weui-cell weui-cell_access" href="javascript:;" >
+                    <div class="weui-cell__hd" >
+                        <img src="{{item.avatar}}" alt="" class="{{styles['chat-avatar']}}"></div>
+                    <div class="weui-cell__bd" >
+                        <div class="{{styles['title']}}" >
+                            <h4 class="{{styles['name']}}"> {{item.name}} </h4>
+                            <span class="{{styles['ext']}}" >11:00</span>
+                        </div>
+                        <p class="{{styles['description']}}" >hello world</p>
+                    </div>
+                </a>
+                {{/each}}
+            </div>
+        </div>
+        <div class="weui-tab__content">
+            <section>
+                {{each contacts as group i}}
+                <div class="weui-cells__title">{{group.title}}</div>
+                <div class="weui-cells">
+                    {{each group.data as item j}}
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__hd">
+                            <img src="{{item.avatar}}" alt="" class="{{styles['mini-avatar']}}">
+                        </div>
+                        <div class="weui-cell__bd">
+                            {{item.name}}
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                {{/each}}
+            </section>
+        </div>
+        <div class="weui-tab__content">
+            <section>
+                <div class="weui-cells">
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__hd">
+                            <i class="{{styles['icon-timeline']}}"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            朋友圈
+                        </div>
+                        <div class="weui-cell__ft">
+                            <div class="{{styles['notice']}}">
+                                <img src="https://team.weui.io/avatar/jf.jpg" alt="" class="">
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells">
+                    <div class="weui-cell weui-cell_access" id="scanCell">
+                        <div class="weui-cell__hd">
+                            <i class="{{styles['icon-scan']}}"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            扫一扫
+                        </div>
+                    </div>
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__hd">
+                            <i class="{{styles['icon-shake']}}"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            摇一摇
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells">
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__hd">
+                            <i class="{{styles['icon-nearby']}}"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            附近的人
+                        </div>
+                    </div>
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__hd">
+                            <i class="{{styles['icon-box']}}"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            漂流瓶
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weui-cells">
+                    <a href="http://wq.jd.com" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__hd">
+                            <i class="{{styles['icon-shop']}}"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            购物
+                        </div>
+                    </a>
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__hd">
+                            <i class="{{styles['icon-game']}}"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            游戏
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="weui-tab__content">
+            <div class="weui-cells">
+                <a href="#/profile" class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <img src="https://team.weui.io/avatar/bear.jpg" alt="" class="{{styles['avatar']}}">
+                    </div>
+                    <div class="weui-cell__bd">
+                        <h4 class="{{styles['nickname']}}">bear</h4>
+
+                        <p class="{{styles['wxid']}}">微信号: bear</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <i class="{{styles['icon-qrcode']}}"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="weui-cells">
+                <a href="javascript:;" class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <i class="{{styles['icon-photo']}}"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>相册</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <i class="{{styles['icon-collection']}}"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>收藏</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <i class="{{styles['icon-wallet']}}"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>钱包</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <i class="{{styles['icon-card']}}"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>卡券</p>
+                    </div>
+                </a>
+            </div>
+            <div class="weui-cells">
+                <a href="javascript:;" class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <i class="{{styles['icon-emotion']}}"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>表情</p>
+                    </div>
+                </a>
+            </div>
+            <div class="weui-cells">
+                <a href="#/setting" class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <i class="{{styles['icon-setting']}}"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>设置</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="weui-tabbar">
+        <a href="javascript:;" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <i class="icon-chat"></i>
+            </div>
+            <p class="weui-tabbar__label">微信</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <i class="icon-contact"></i>
+            </div>
+            <p class="weui-tabbar__label">通讯录</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <i class="icon-discovery"></i>
+            </div>
+            <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <i class="icon-profile"></i>
+            </div>
+            <p class="weui-tabbar__label">我</p>
+        </a>
+    </div>
+</div>

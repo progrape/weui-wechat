@@ -1,0 +1,254 @@
+
+.avatar {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.mini-avatar {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.nickname {
+    font-weight: normal;
+}
+
+.wxid {
+
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 26px;
+}
+
+.icon-qrcode {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/qrcode.png");
+    background-size: cover;
+}
+
+.icon-photo {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/photo.png");
+    background-size: cover;
+}
+
+.icon-collection {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/collection.png");
+    background-size: cover;
+}
+
+.icon-wallet {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/wallet.png");
+    background-size: cover;
+}
+
+.icon-card {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/card.png");
+    background-size: cover;
+}
+
+.icon-emotion {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/emotion.png");
+    background-size: cover;
+}
+
+.icon-setting {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/setting.png");
+    background-size: cover;
+}
+
+.icon-timeline {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/timeline.png");
+    background-size: cover;
+}
+
+.icon-scan {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/scan.png");
+    background-size: cover;
+}
+
+.icon-shake {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/shake.png");
+    background-size: cover;
+}
+
+.icon-nearby {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/nearby.png");
+    background-size: cover;
+}
+
+.icon-box {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/box.png");
+    background-size: cover;
+}
+
+.icon-shop {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/shop.png");
+    background-size: cover;
+}
+
+.icon-game {
+    composes: icon;
+    margin-right: 10px;
+    background: url("../home/icon/game.png");
+    background-size: cover;
+}
+
+.notice {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    img {
+        width: 26px;
+        height: 26px;
+        vertical-align: middle;
+    }
+
+    i {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: red;
+    }
+}
+
+:global {
+    .icon-chat {
+        display: inline-block;
+        vertical-align: middle;
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+        background: url("../home/icon/chat.png");
+        background-size: cover;
+    }
+
+    .icon-contact {
+        display: inline-block;
+        vertical-align: middle;
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+        background: url("../home/icon/contact.png");
+        background-size: cover;
+    }
+
+    .icon-discovery {
+        display: inline-block;
+        vertical-align: middle;
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+        background: url("../home/icon/discovery.png");
+        background-size: cover;
+    }
+
+    .icon-profile {
+        display: inline-block;
+        vertical-align: middle;
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+        background: url("../home/icon/profile.png");
+        background-size: cover;
+    }
+
+    .weui-bar__item_on {
+        .icon-chat {
+            background: url("../home/icon/chat_selected.png");
+            background-size: cover;
+        }
+
+        .icon-contact {
+            background: url("../home/icon/contact_selected.png");
+            background-size: cover;
+        }
+
+        .icon-discovery {
+            background: url("../home/icon/discovery_selected.png");
+            background-size: cover;
+        }
+
+        .icon-profile {
+            background: url("../home/icon/profile_selected.png");
+            background-size: cover;
+        }
+    }
+}
+
+.chat {
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+
+.chat-avatar {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.title {
+    display: flex;
+}
+
+.name {
+    font-weight: normal;
+    flex: 1;
+    color: #000;
+}
+
+.ext {
+    color: #888888;
+    font-size: 12px;
+}
+
+.description {
+    color: #888888;
+    font-size: 14px;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
